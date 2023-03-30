@@ -21,6 +21,7 @@ Aplicação de funçõs basica de um Banco.
 ## ----- PROJETO EM DESENVOLVIMENTO -----
 
 - [x] Atualização do README
+- [ ] Criação da tela de clientes
 - [x] Criação do cadastro de clientes
 - [x] Criação da tela de cadastro de clientes
 - [x] Inclusão de novo cadastro no arquivo clientes.txt

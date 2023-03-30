@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 
 class Telas:
+    
     def __init__(self):
         #Layout
         layout = [
