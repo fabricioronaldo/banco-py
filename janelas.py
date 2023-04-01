@@ -31,7 +31,7 @@ def cadastrar_cliente():
     ]
     return sg.Window('Cadastro de Clientes', layout=layout, finalize=True)
 
-janela_principal, janela_clientes, j_cad_clientes = menu_principal(), None, None
+janela_principal, janela_clientes, janela_cad_clientes = menu_principal(), None, None
         
      #Extrair dados da tela
      #self.button, self.values = janela.Read()
@@ -65,3 +65,6 @@ while True:
     elif window == janela_clientes and event == 'Voltar':
         janela_clientes.hide()
         janela_principal.un_hide()
+    elif window == janela_cad_clientes and event == 'Voltar':
+        janela_cad_clientes.hide()
+        janela_clientes.un_hide()
