@@ -31,40 +31,45 @@ def cadastrar_cliente():
     ]
     return sg.Window('Cadastro de Clientes', layout=layout, finalize=True)
 
-janela_principal, janela_clientes, janela_cad_clientes = menu_principal(), None, None
+# janela_principal, janela_clientes, janela_cad_clientes = menu_principal(), None, None
         
-     #Extrair dados da tela
-     #self.button, self.values = janela.Read()
+#      #Extrair dados da tela
+#     self.button, self.values = janela.Read()
 
-#def Iniciar(self):
+# def Iniciar(self):
         
-    #cpf = self.values['cpf']
-    #nome = self.values['nome']
-    #telefone =self.values['telefone']
+#     cpf = self.values['cpf']
+#     nome = self.values['nome']
+#     telefone =self.values['telefone']
     
-        #print(self.values)
-    #return cpf, nome, telefone
+#         print(self.values)
+#     return cpf, nome, telefone
 
 
-while True:
-    window, event, values = sg.read_all_windows()
+# while True:
+#     window, event, values = sg.read_all_windows()
 
-    # Quando a janela for fechada
-    if window == janela_principal and event == sg.WIN_CLOSED:
-        break
+#     # Quando a janela for fechada
+#     if window == janela_principal and event == sg.WIN_CLOSED:
+#         break
 
-    # Quando queremos ir para próxima janela
+#     # Quando queremos ir para próxima janela
 
-    if window == janela_principal and event == 'Clientes':
-        janela_clientes = menu_cliente()
-        janela_principal.hide()
+#     if window == janela_principal and event == 'Clientes':
+#         janela_clientes = menu_cliente()
+#         janela_principal.hide()
+#     elif event == sg.WIN_CLOSED:
+#         break 
+    
+#     if window == janela_clientes and event == 'Cadastrar Cliente':
+#         janela_cad_clientes = cadastrar_cliente()
+#         janela_clientes.hide()
+#     elif window == janela_clientes and event == 'Voltar':
+#         janela_clientes.hide()
+#         janela_principal.un_hide()
+#     elif event == sg.WIN_CLOSED:
+#         break
 
-    if window == janela_clientes and event == 'Cadastrar Cliente':
-        janela_cad_clientes = cadastrar_cliente()
-        janela_clientes.hide()
-    elif window == janela_clientes and event == 'Voltar':
-        janela_clientes.hide()
-        janela_principal.un_hide()
-    elif window == janela_cad_clientes and event == 'Voltar':
-        janela_cad_clientes.hide()
-        janela_clientes.un_hide()
+#     if window == janela_cad_clientes and event == 'Voltar':
+#         janela_cad_clientes.hide()
+#         janela_clientes.un_hide()
