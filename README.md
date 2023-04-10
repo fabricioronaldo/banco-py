@@ -25,7 +25,7 @@ Aplicação de funçõs basica de um Banco.
 - [x] Criação da tela de clientes
 - [x] Criação do cadastro de clientes
 - [x] Criação da tela de cadastro de clientes
-- [ ] Inclusão de novo cadastro no arquivo clientes.txt
+- [X] Inclusão de novo cadastro no arquivo clientes.txt
 - [ ] Localização de clientes por nome ou cpf
 - [ ] Desativar cliente.
 
