@@ -1,13 +1,7 @@
-import PySimpleGUI as sg
+print("Welcome to the tip calculator.")
+conta = float(input("What was the total bill?"))
+percentage = int(input("What percentage tip would you like to give? 10, 12, or 15?"))
+people = int(input("How many people to split the bill?"))
+total = (percentage/100) * conta / people
 
-def janela_principal():
-    sg.theme('Reddit') 
-    layout = [
-            [sg.Text('Escolha uma Operação:', font=('Helvetica', 20),pad=(0,20))],
-            [sg.Button('Cliente', size=(50,0))],
-            [sg.Button('Conta', size=(50,0))]
-        ]
-    return sg.Window('Menu Principal', layout=layout, finalize=True)
-
-
-
+print(total)

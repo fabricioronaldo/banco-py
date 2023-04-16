@@ -3,5 +3,5 @@ class Cliente:
         self.cpf = cpf
         self.nome = nome
         self.telefone = telefone
-
+    
     

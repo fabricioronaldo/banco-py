@@ -1,8 +1,8 @@
 class Conta:
     def __init__(self, cliente, conta, saldo = 0):
-        self.__cliente = cliente
-        self.__conta = conta
-        self.__saldo = saldo
+        self.cliente = cliente
+        self.conta = conta
+        self.saldo = 0
         self.operacoes = []
         self.deposito(saldo) 
 
@@ -12,17 +12,19 @@ class Conta:
     def saque(self, valor):
         if self.saldo >= valor:
             self.saldo -= valor
-            self.operacoes.append("SAQUE", valor)
+            self.operacoes.append(["SAQUE", valor])
         else:
             print("Saldo Insuficiente para saque!")
 
     def deposito(self, valor):
         self.saldo += valor
-        self.operacoes.append("DEPOSITO", valor)
+        self.operacoes.append(["DEPOSITO", valor])
     
+    def extrato(self):
+        
+        print(f'Extrato de CC Nº {self.conta}')
 
-
-
-
-conta1 = Conta("Fabricio", 123, 200)
-print(conta1.cliente, conta1.conta, conta1.saldo)
+        for i in self.operacoes:
+            print(f"{i[0]}, {i[1]}")
+        
+        print(f'\n Saldo: {self.saldo}')
