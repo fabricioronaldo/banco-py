@@ -1,3 +1,5 @@
+from cliente import Cliente
+
 class Conta:
     def __init__(self, cliente, conta, saldo = 0):
         self.cliente = cliente
